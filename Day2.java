@@ -47,3 +47,28 @@ public static void swap(int time[][], int i,int j){
   time[j][1]=t2;
    }
 }
+/*Example Input/Output 1:
+Input:
+5
+Arun 09:05 09:15
+John 09:02 09:30
+Babloo 09:20 10:00
+Deepa 09:10 09:25
+Gavin 08:45 09:10
+09:10
+
+Output:
+John
+Arun
+Deepa
+Explanation:
+Here the given time T is 09:10.
+The persons who are online at 09:10 are given below.
+Arun
+John
+Deepa
+So their names are printed based on the given conditions.
+Hence the output is
+John
+Arun
+Deepa */
