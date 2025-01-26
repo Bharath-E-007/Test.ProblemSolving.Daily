@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Day5 {
     static class C {
         int r, c;
@@ -59,3 +58,53 @@ public class Day5 {
 return Math.min(p1, p2);
 }
 }
+/*The program must accept an integer matrix of size R*C and N integers as the input. 
+All integers in the matrix are unique and the given N integers are always present in the matrix. 
+The program must print the sum of all the integers present in the path by connecting the given 
+  N integers in the matrix based on the following conditions.
+- The path must be formed by connecting the given N integers in the order of their occurrence.
+
+- Only horizontal and vertical movements are allowed.
+
+- If two integers are present in the same row or column,
+ then the two integers must be connected directly. 
+ Else the two integers are connected by the path which has exactly one change in the direction and gives
+  the minimum sum. 
+  Input:
+
+4 4
+
+24 20 14 23 
+15 10 18 13
+12 26 25 16
+19 21 11 22
+
+3
+21 11 22
+
+Output:
+
+96
+
+Explanation:
+
+The path must be formed by connecting the following three integers.
+
+10-13-12
+
+10 and 13 are present in the same row. So they are connected as 10 -> 18- > 13.
+
+13 and 12 are NOT present in the same row or column. There are two possible ways to connect 13 and 12 which are given below.
+
+13 -> 18 -> 10 -> 15 -> 12 (The sum of integers present in the path is 68).
+
+13->16 -> 25 -> 26 -> 12 (The sum of integers present in the path is 92).
+
+So the path with the minimum sum 68 is considered.
+
+The entire path by connecting the given 3 integers is given below.
+
+10->18- 13 -> 18 -> 10 -> 15 -> 12
+
+The sum of integers present in the above path is 96, which is printed as the output.
+  */
