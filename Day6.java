@@ -14,7 +14,6 @@ public class Day6 {
                 mat[i][j] = sc.nextInt();
             }
         }
-
         for (int j = 0; j < c; j++) {
             col[j] = sc.nextInt();
         }
