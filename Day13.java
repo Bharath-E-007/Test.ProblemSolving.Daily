@@ -34,3 +34,56 @@ public class Day13 {
         return Integer.parseInt(s);
     }
 }
+/*Example Input/Output 1:
+
+Input:
+
+1234567
+
+3abcde2
+
+4jihgf4
+
+8knqtw8
+
+9lorux1
+
+5mpsvy4
+
+1236987
+
+boating
+
+Output:
+
+124
+
+Explanation:
+
+1st alphabet: b ->
+
+(3 + 2 + 3 + 3) = 11
+
+2nd alphabet: o->
+
+(3 + 1 + 3 + 9) = 16
+
+3rd alphabet: a ->
+
+(2 + 2 + 2 + 3) = 9
+
+4th alphabet:
+
+/-> (5 + 8 + 9 + 8) = 30 .
+
+5th alphabet:
+
+i -> (3 + 4 + 3 + 4) = 14
+
+6th alphabet:
+
+n -> (3 + 8 + 3 + 8) = 22
+
+7th alphabet: 9 -> (5 + 4 + 9 + 4) = 22
+
+The total sum is 124, which is printed as the output.*/
